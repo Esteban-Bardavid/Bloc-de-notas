@@ -1,0 +1,149 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+header{
+  width: 100vw;
+}
+.main-notes{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.div-div{
+  background-color: black;
+  width: 100vw;
+  height: 20px;
+}
+.form-tex{
+    background: black;
+    width: 700px;
+    height: 400px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 2px solid grey;
+    
+    align-items: center;
+    
+  }
+  .notes{
+    background: rgb(222, 225, 232);
+    width: 700px;
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content:space-around;
+    border-radius: 10px;
+    border: 2px solid rgb(98, 96, 96);
+    word-wrap: break-word;
+    
+  }
+h3{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: underline;
+  }
+  b{
+    display: flex;
+    justify-content: center;
+  }
+  #addNote{
+    height: 100px;
+  
+  }
+#newAdd{
+  height: 100px;
+}
+  footer{
+    position: absolute;
+    background: linear-gradient(160deg, #66696a 0%, #515d5b 100%);
+    height: auto;
+    width: 100vw;
+    font-family: "open sans";
+    padding-top: 15px;
+    color: #fff;
+    margin-top: auto;
+   
+
+}
+
+.footer-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-contenido p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.social li{
+    margin: 0 10px;
+}
+
+.social a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.social a:hover i{
+    color: rgb(97, 14, 241)
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+ 
+  @media (max-width: 850px) {
+    .form-tex{
+      flex-direction: column;
+      width: 100%;
+      padding: 5px;
+    }
+   
+   .notes{
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+   }
+  }
+  

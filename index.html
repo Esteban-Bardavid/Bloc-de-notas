@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h5 class="text-white h4">Bloc de notas con Javascript</h5>
+          <span class="text-muted">Anotaciones, notas y mas....</span>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <section class="main-notes">
+    <main>
+      <div>
+        <section class="form-tex">
+          <h3 class="line">Mi bloc de notas...!</h3>
+          <input type="text" id="nameNote" class="form-control" placeholder="Titulo nota...">
+          <input type="text" id="addNote" class="form-control" placeholder="Agregar nota...">
+          <button type="button" id="buttonSave" class="btn btn-success mt-3 w-50" onclick="CrearNota()">Guardar
+            Notas</button>
+
+        </section>
+        <section id="misNotas">
+        </section>
+  </section>
+  
+
+  <section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Actualizar</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" id="newNote" class="form-control" placeholder="Titulo nota...">
+        <input type="text" id="newAdd" class="form-control" placeholder="Agregar nota...">
+      </div>
+      <div class="modal-footer" data-bs-dismiss="modal">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" onclick="ActualizarNota()" class="btn btn-primary">Actualizar nota...</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<div class="div-div"></div>
+  </main>
+
+
+  <footer>
+    <div class="footer-contenido">
+      <h2>Bloc de notas con Javascript</h2>
+      <p>Esteban Bardavid : +543815034391</p>
+      <ul class="social">
+        <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://mail.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <p>copyright &copy;2022 La comi 19i - All Rights Reserved</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+
+
+</html>
